@@ -6,6 +6,7 @@ import os
 
 # CUSTOM FUNCTIONS
 
+os.makedirs('models', exist_ok=True)
 model=YOLO('models/yolo11l-pose.pt')
 image_name='image_3.jpg'
 predict=model(source=f'images/{image_name}')
