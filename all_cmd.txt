@@ -1,0 +1,18 @@
+python bicep-curl-counter.py --model yolo11l-pose.pt --video inference/videos/bicep-curl.mp4 --conf 0.5 --save
+
+yolo pose predict model=yolo11l-pose.pt source=inference/images/football.png show=True
+OR
+yolo predict model=yolo11l-pose.pt source='inference/images/football.png' show=True
+
+
+
+
+yolo pose predict model=yolo11l-pose.pt source=inference/videos/bicep-curl.mp4 show=True
+
+OR
+
+yolo predict model=yolo11l-pose.pt source=inference/videos/people.mp4 show=True
+
+
+
+yolo track model=yolo11l-pose.pt source=inference/videos/people.mp4 show=True #ID
